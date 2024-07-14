@@ -26,6 +26,13 @@ a{
    text-decoration: none;
    list-style: none;
 }
+
+section{
+    padding: 80px 0;
+}
+.box{
+    padding: 0.8%;
+}
 /* header */
 .logo{
      height: 100px;
@@ -59,15 +66,38 @@ header{
     background-position: center;
     height: 100vh;  
 }
-h1{
-    color: #fff;
-    margin:0;
-    font-size: 200%;
+h1,h2,h3{
     font-weight: 300;
     text-transform: uppercase;
-    letter-spacing: 1px;
-    word-spacing: 3px;
+}
+
+h1{
+    color: #fff;
+    font-size: 200%;
+    margin:0;
     margin-bottom: 20px;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+}
+h2{
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+h3{
+     font-size: 110%;
+     margin-bottom: 15px;
+}
+h2::after{
+    content: '';
+    display: block;
+    height: 2px;
+    background-color: #e67e22;
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
 }
 .hero-text-box{
     position: absolute;
@@ -75,6 +105,21 @@ h1{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+}
+/* paragraphs */
+.long-copy{
+  width: 70%;
+  margin-left: 15%;
+}
+.box p{
+    font-size: 90%;
+}
+/* icon */
+.icon-big{
+    font-size: 350%;
+    display: block;
+    color: #e67e22;
+    margin-bottom: 10px;
 }
 /* reuseable componets btn*/
 .btn:link,
@@ -114,3 +159,4 @@ h1{
     border: 1px solid #cf6d17;
     color: #fff;
 }
+
